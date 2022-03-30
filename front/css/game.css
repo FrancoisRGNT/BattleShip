@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+
+body {
+    background-image: url(../img/fond_bleu.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra*/
+    -ms-user-select: none; /* Internet explorer, Edge */
+    user-select: none; /* Propriété standard */
+}
+
+.text{
+    font-family: 'Poppins';
+    color: white;
+    font-size: x-large;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container2{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.loader {
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    stroke-linecap: round;
+}
+circle {
+    fill: none;
+    stroke-width: 3.5;
+    animation-name: preloader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 170px 170px;
+    will-change: transform;
+}
+circle:nth-of-type(1) {
+    stroke-dasharray: 550px;
+}
+circle:nth-of-type(2) {
+    stroke-dasharray: 500px;
+}
+circle:nth-of-type(3) {
+    stroke-dasharray: 450px;
+}
+circle:nth-of-type(4) {
+    stroke-dasharray: 300px;
+}
+circle:nth-of-type(1) {
+    animation-delay: -0.15s;
+}
+circle:nth-of-type(2) {
+    animation-delay: -0.3s;
+}
+circle:nth-of-type(3) {
+    animation-delay: -0.45s;
+}
+circle:nth-of-type(4) {
+    animation-delay: -0.6s;
+}
+@keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+   }
+}
+
+
+.gameboard {
+	position:relative;
+	margin:0 auto 2em auto;
+	width:500px;
+	height:500px;
+}
+
+.case{
+    position:absolute;
+	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;        
+	background: #f6f8f9; 
+	border: 1px solid blue;
+	width:50px;
+	height:50px;
+}
+
+
+
+

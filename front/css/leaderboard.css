@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "PoppinsBold";
+    src: url(../fonts/Poppins-ExtraBoldItalic.ttf) 
+}
+
+body {
+    background-image: url(../img/fond_bleu.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra*/
+    -ms-user-select: none; /* Internet explorer, Edge */
+    user-select: none; /* Propriété standard */
+}
+
+h1{
+    font-family: 'PoppinsBold';
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}

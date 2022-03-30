@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf) 
+}
+
+
+body {
+    background-image: url(../img/fond_bleu.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra*/
+    -ms-user-select: none; /* Internet explorer, Edge */
+    user-select: none; /* Propriété standard */
+}
+
+* {
+    font-size: 10px;
+ }
+
+
+
+.logo {
+    background-image: url(../img/battleship_logo.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 80vw;
+}
+  
+  .main-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    font-family: 'Poppins';
+
+ }
+  
+  button {
+    border: none;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.95);
+    
+ }
+  
+  
+  .button {
+    padding: 2rem 7rem;
+    background: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    will-change: transform; }
+
+  
+  .btn {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.95);
+    border: 1px solid white;
+    transition: .3s all ease-in-out; }
+    .btn:hover {
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 10px 5px #838383; }
+  
+  

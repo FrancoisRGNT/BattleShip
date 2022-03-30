@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+    
+        <div id="waiting">
+            <div class="text">
+                <p>Waiting for players ...</p>
+            </div>
+    
+            <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                <circle cx="170" cy="170" r="160" stroke="#000000" />
+                <circle cx="170" cy="170" r="135" stroke="#FFFFFF" />
+                <circle cx="170" cy="170" r="110" stroke="#000000" />
+                <circle cx="170" cy="170" r="85" stroke="#FFFFFF" />
+            </svg>
+    
+        </div>
+    </div>
+</body>
+<script src="../js/game.js"></script>
+
+
+</html>
