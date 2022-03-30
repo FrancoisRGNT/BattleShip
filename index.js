@@ -50,7 +50,7 @@ app.route('/')
         let sessionData = req.session;
 
         if (!sessionData.connected) {
-            res.sendFile(__dirname + '/front/html/game.html')
+            res.sendFile(__dirname + '/front/html/login.html')
         }
         else {
             res.sendFile(__dirname + '/front/html/index.html');
